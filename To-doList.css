@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    
+    width:50rem;
+    background: linear-gradient(to bottom , aqua ,skyblue );
+    max-height: 500px;
+    overflow: scroll;
+    scrollbar-width: none;
+}
+.name{
+    size: 20px;
+    text-align: center;
+}
+.search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+#searchBox{
+    width: 80%;
+    height: 3rem;
+    border-radius: 20px;
+    padding:10px;
+}
+#searchBox:focus{
+    background: rgb(235, 247, 213);
+}
+.addBtn{
+    width: 20%;
+    height: 3rem;
+    border-radius: 20px;
+}
+
+.addBtn:focus{
+    background: rgb(235, 247, 213);
+}
+
+.tasks{
+    width: 40rem;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+.tasks ul {
+    margin: 10px;
+}
+
+.task{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin:10px;
+    overflow: scroll;
+    scrollbar-width: none;
+}
+.tasks ul li p {
+    width: 15rem;
+    border-radius: 10px;
+    /* height: 35px; */
+    background:  rgb(235, 247, 213);
+    padding: 10px;
+
+
+}
+
+.tick i{
+    margin:5px ;
+    margin-left:.5rem ;
+}
+
+.drop i{
+    margin-left:0.5rem;
+}
+.complete-btn {
+    text-decoration: line-through;
+    color: green;
+}
+.delete-btn { color: #dc3545; }
+
